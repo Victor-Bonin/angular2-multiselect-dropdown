@@ -31,7 +31,7 @@
                 </span>
             </div>
         </div>
-        <span class="countplaceholder" *ngIf="selectedItems?.length > settings.badgeShowLimit">+{{selectedItems?.length - settings.badgeShowLimit }}</span>
+        <span class="countplaceholder" *ngIf="selectedItems?.length > settings.badgeShowLimit">{{selectedItems?.length}} / {{data?.length}}</span>
         <span *ngIf="!isActive" class="c-angle-down">
     <c-icon [name]="'angle-down'"></c-icon>
             </span>
